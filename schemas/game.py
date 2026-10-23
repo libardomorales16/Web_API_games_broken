@@ -8,7 +8,7 @@ class GameCreate(BaseModel):
 
     # PISTA: una tienda no debería registrar un juego con 0 unidades disponibles.
     # Revisa con cuidado el límite inferior.
-    stock: int = Field(ge=0, le=50)
+    stock: int = Field(ge=1, le=50)
 
     active: bool = True
 
